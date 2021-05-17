@@ -32,7 +32,12 @@
   --default-time: 250ms;
   --window-button-min: #ffbd44;
   --window-button-max: #00ca4e;
-  --window-button-close: #ff605c; }
+  --window-button-close: #ff605c; 
+  --background-image: url(https://vsthemes.org/uploads/posts/2021-05/1621013582_ninomae_inanis_full_3071052.jpg);
+  --friends-icon: url(https://giffiles.alphacoders.com/147/14784.gif);
+  --friends-icon-position: center center;
+  --friends-icon-zoom: 100%;
+  }
 
 .theme-dark {
   --main-color: #16171a;
