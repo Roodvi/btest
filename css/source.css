@@ -32,131 +32,97 @@
   --default-time: 250ms;
   --window-button-min: #ffbd44;
   --window-button-max: #00ca4e;
-  --window-button-close: #ff605c;
-  --background-image: url(https://vsthemes.org/uploads/posts/2021-05/1621013582_ninomae_inanis_full_3071052.jpg);
-  --friends-icon: url(https://giffiles.alphacoders.com/147/14784.gif);
-  --friends-icon-position: center center;
-  --friends-icon-zoom: 100%;
+  --window-button-close: #ff605c; 
   }
 
+.theme-dark {
+  --main-color: #16171a;
+  --main-alt: #0f1012;
+  --server-color: #232327;
+  --status-picker-color: #181a1d;
+  --sidebar-panel-color: #111114;
+  --chat-color: #202225;
+  --message-color: #292d30;
+  --message-color-alt: #1c1e21;
+  --attachment-color: rgb(0,0,0,0.325);
+  --main-textarea-color: #303338;
+  --main-textarea-color-alt: #3b3f42;
+  --main-textarea-border: #3e434a;
+  --typing-color: rgba(32,34,37,0.9);
+  --popout-color: #2c2f33;
+  --popout-color-alt: #202225;
+  --popout-header-border: #444;
+  --separator-color: #444;
+  --input-color: rgba(255,255,255,0.075);
+  --input-border-color: #444;
+  --tab-border-color: #fff;
+  --menu-item-hover: rgba(255,255,255,0.075);
+  --menu-item-select: rgba(255,255,255,0.1);
+  --menu-item-text-color: #aaa;
+  --card-color: transparent;
+  --card-color-hover: #292b2f;
+  --card-color-alt: #2a2c30;
+  --card-color-alt-hover: #35383d;
+  --card-border-color: #444;
+  --card-header-text-color: #dcddde;
+  --button-link-color: 255,255,255;
+  --button-link-text-color: #fff;
+  --slider-color: #4f545c;
+  --switch-knob-color: #777;
+  --switch-slider-color: rgba(65,65,65,0.65);
+  --md-ripple-color: 255,255,255;
+  --emoji-category-header: rgba(44,47,51,0.95);
+  --scrollbar-color: 255,255,255;
+  --window-button: rgba(255,255,255,0.1);
+  --window-button-inactive: rgba(255,255,255,0.05); }
+
+.theme-light {
+  --main-color: #e8eaeb;
+  --main-alt: #ddd;
+  --server-color: #eee;
+  --status-picker-color: #dee0e0;
+  --sidebar-panel-color: #d4d6d6;
+  --chat-color: #fff;
+  --message-color: #edeff0;
+  --message-color-alt: #e8e8e8;
+  --attachment-color: rgba(0,0,0,0.1);
+  --main-textarea-color: #fff;
+  --main-textarea-color-alt: #ccc;
+  --main-textarea-border: #dadce0;
+  --typing-color: rgba(255,255,255,0.8);
+  --popout-color: #fff;
+  --popout-color-alt: #e5e5e5;
+  --popout-header-border: #aaa;
+  --separator-color: #ccc;
+  --input-color: #d2d4d4;
+  --input-border-color: #aaa;
+  --tab-border-color: #777;
+  --menu-item-hover: rgba(0,0,0,0.1);
+  --menu-item-select: rgba(0,0,0,0.125);
+  --menu-item-text-color: #333;
+  --card-color: transparent;
+  --card-color-hover: #eee;
+  --card-color-alt: transparent;
+  --card-color-alt-hover: #d4d4d4;
+  --card-border-color: #ccc;
+  --card-header-text-color: #333;
+  --button-link-color: 0,0,0;
+  --button-link-text-color: #333;
+  --slider-color: #999;
+  --switch-knob-color: #fff;
+  --switch-slider-color: rgba(0,0,0,0.2);
+  --md-ripple-color: 0,0,0;
+  --emoji-category-header: rgba(255,255,255,0.9);
+  --scrollbar-color: 0,0,0;
+  --window-button: rgba(0,0,0,0.2);
+  --window-button-inactive: rgba(0,0,0,0.1); }
 
 /*
  *
  *	APP ELEMENTS
  *
  */
-* {
-  font-family: 'Google Sans', sans-serif !important; }
 
-::selection {
-  background: #859fbf;
-  text-shadow: none; }
-
-body,
-.app-2rEoOp,
-.appMount-3lHmkl {
-  background-color: transparent; }
-
-.bg-h5JY_x {
-  background: var(--app-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.anchor-3Z-8Bb {
-  color: var(--accent-color); }
-
-.wordmark-2iDDfm.wordmarkWindows-1v0lYD {
-  width: auto;
-  height: 22px;
-  padding: 0 0 0 4px;
-  line-height: 22px;
-  font-size: 0.925em;
-  color: var(--text-normal); }
-  .wordmark-2iDDfm.wordmarkWindows-1v0lYD:before, .wordmark-2iDDfm.wordmarkWindows-1v0lYD:after {
-    position: relative;
-    width: auto;
-    height: 22px; }
-  .wordmark-2iDDfm.wordmarkWindows-1v0lYD:before {
-    content: "Material";
-    font-weight: 700; }
-  .wordmark-2iDDfm.wordmarkWindows-1v0lYD:after {
-    content: "Discord"; }
-  .wordmark-2iDDfm.wordmarkWindows-1v0lYD svg {
-    display: none; }
-
-.typeWindows-1za-n7 .winButton-iRh8-Z:before {
-  position: absolute;
-  content: " ";
-  width: 12px;
-  height: 12px;
-  background-position: center;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  filter: brightness(40%);
-  z-index: 2;
-  opacity: 0;
-  transition: var(--default-time) var(--default-animation) opacity;
-  pointer-events: none; }
-.typeWindows-1za-n7 .winButton-iRh8-Z:hover:before {
-  opacity: 1; }
-.typeWindows-1za-n7 .winButton-iRh8-Z:after {
-  position: absolute;
-  content: " ";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--window-button);
-  transition: var(--default-time) var(--default-animation);
-  pointer-events: none; }
-.typeWindows-1za-n7 .winButton-iRh8-Z:active:after {
-  opacity: 0.65; }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonMinMax-PBQ2gm:nth-last-of-type(2):hover:after {
-  background-color: var(--window-button-max); }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonMinMax-PBQ2gm:nth-last-of-type(2):before {
-  background-color: var(--window-button-max);
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_maximize.svg);
-  mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_maximize.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonMinMax-PBQ2gm:nth-last-of-type(1):hover:after {
-  background-color: var(--window-button-min); }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonMinMax-PBQ2gm:nth-last-of-type(1):before {
-  background-color: var(--window-button-min);
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_minimize.svg);
-  mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_minimize.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonClose-1HsbF-:hover:after {
-  background-color: var(--window-button-close); }
-.typeWindows-1za-n7 .winButton-iRh8-Z.winButtonClose-1HsbF-:before {
-  background-color: var(--window-button-close);
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_close.svg);
-  mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/window_close.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; }
-.typeWindows-1za-n7 .winButton-iRh8-Z:hover, .typeWindows-1za-n7 .winButton-iRh8-Z:active {
-  background-color: transparent; }
-.typeWindows-1za-n7 .winButton-iRh8-Z svg {
-  display: none; }
-
-html:not(.app-focused) .typeWindows-1za-n7 .winButton-iRh8-Z:after {
-  background-color: var(--window-button-inactive); }
-html:not(.app-focused) .typeWindows-1za-n7 .winButton-iRh8-Z.winButtonMinMax-PBQ2gm:after {
-  background-color: var(--window-button-inactive); }
-
-/*
- *
- *	NOTICES
- *
- */
-.notice-1tZwqv,
-.notice-3bPHh- {
-  border-radius: 0; }
-  .notice-1tZwqv .button-3Ijpww,
-  .notice-3bPHh- .button-3Ijpww {
-    background-color: transparent !important;
-    box-shadow: none !important; }
 
 /*
  *
